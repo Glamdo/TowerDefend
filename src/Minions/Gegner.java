@@ -2,5 +2,5 @@ package Minions;
 
 public class Gegner {
 
-	private int damage; //hallo
+	private int damage; //hallo heyhi
 }
