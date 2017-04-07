@@ -1,7 +1,7 @@
-package Minions;
+package model.minions;
 
 public class Gegner {
 
-	private int damage; //hallo heyhihall hhasfg
+	private int damage; 
 
 }
