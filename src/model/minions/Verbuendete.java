@@ -1,8 +1,13 @@
 package model.minions;
 
-public class Verbuendete{
+import model.essential.Healthbar;
 
-	public Verbuendete() {
-		
+public class Verbuendete extends Minions{
+	
+	public Verbuendete(Healthbar health, int damage) {
+		super(health, damage);
+		// TODO Auto-generated constructor stub
 	}
+
+	
 }
