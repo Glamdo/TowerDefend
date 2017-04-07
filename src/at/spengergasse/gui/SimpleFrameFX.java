@@ -42,7 +42,6 @@ public class SimpleFrameFX extends Stage {
 	final private Button closeBTN;
 		
 	// menu items
-	final MenuItem menuCalculateMI;
 	final MenuItem menuCloseMI;
 
 	// reference to the listener
@@ -121,15 +120,8 @@ public class SimpleFrameFX extends Stage {
         );
         // add menu items to menu file
         menuFile.getItems().addAll(menuCloseMI);
-        // menu edit
-        Menu menuEdit = new Menu("_Edit");
-        // menu default
-        menuCalculateMI = new MenuItem("Calculate");
-        // add listener
-		menuCalculateMI.addEventHandler(ActionEvent.ACTION, simpleListener);
-        menuEdit.getItems().addAll(menuCalculateMI);
         // menu default     
-        menuBar.getMenus().addAll(menuFile,menuEdit);
+        menuBar.getMenus().addAll(menuFile);
         
         // add menu bar and borderpane to vbox
         vBox.getChildren().addAll(menuBar,borderPane);
@@ -147,12 +139,6 @@ public class SimpleFrameFX extends Stage {
 	public Button getCloseBTN() {
 		return closeBTN;
 	}
-
-
-	public MenuItem getMenuCalculateMI() {
-		return menuCalculateMI;
-	}
-
 
 	public MenuItem getMenuCloseMI() {
 		return menuCloseMI;

@@ -41,7 +41,7 @@ public class SimpleActionListenerFX implements EventHandler<ActionEvent> {
 		Object source=arg0.getSource();
 		//**********************************************************************
 		// starteSpiel button
-		
+		//if(source==simpleFrame.get)
 
 		//**********************************************************************
 		// close
