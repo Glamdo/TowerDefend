@@ -8,5 +8,7 @@ package Itemshop;
  *
  */
 public class Itemshop {
-
+	
+	private int kaufpreis;
+	private int verkaufspreis;
 }
