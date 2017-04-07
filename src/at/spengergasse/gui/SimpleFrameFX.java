@@ -126,7 +126,7 @@ public class SimpleFrameFX extends Stage {
 		// set the scene and add borderpane to the scene
 		Scene scene=new Scene(vBox, 460, 170);
 		setScene(scene);
-
+		
 		// show frame
 		show();
 
@@ -142,6 +142,11 @@ public class SimpleFrameFX extends Stage {
 	}
 
 
+
+
+	public Button getStarteSpielBTN() {
+		return starteSpielBTN;
+	}
 
 
 	/**

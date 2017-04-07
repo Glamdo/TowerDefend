@@ -4,20 +4,23 @@ package at.spengergasse.gui;
  */
 
 
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.io.IOException;
 import java.util.Locale;
-
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert.AlertType;
+import javafx.scene.layout.VBox;
 
 /**
  * @author Leo Fanzott
  *
  */
-public class SimpleActionListenerFX implements EventHandler<ActionEvent> {
+public class SimpleActionListenerFX implements EventHandler<ActionEvent>, MouseListener {
 	
 	// reference to panel
 	final private SimpleFrameFX simpleFrame;
@@ -41,7 +44,7 @@ public class SimpleActionListenerFX implements EventHandler<ActionEvent> {
 		Object source=arg0.getSource();
 		//**********************************************************************
 		// starteSpiel button
-		//if(source==simpleFrame.get)
+		if(source==simpleFrame.getStarteSpielBTN())
 
 		//**********************************************************************
 		// close
@@ -49,6 +52,36 @@ public class SimpleActionListenerFX implements EventHandler<ActionEvent> {
 			source==simpleFrame.getMenuCloseMI()){
 			simpleFrame.close();
 		}
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }
 
