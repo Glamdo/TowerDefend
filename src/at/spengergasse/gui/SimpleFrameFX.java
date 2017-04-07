@@ -4,6 +4,7 @@ import java.util.List;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -71,13 +72,13 @@ public class SimpleFrameFX extends Stage {
 		// gridpane contains rows and columns
 		GridPane gridPane=new GridPane();
 		gridPane.setPadding(new Insets(10,10,10,10));
+		
+		gridPane.setAlignment(Pos.CENTER);
 
 		// gap between the components
 		gridPane.setHgap(10);
 		gridPane.setVgap(10);
-		
-		//flowpane for buttons
-		FlowPane buttonPane=new FlowPane();	
+
 		// starteSpiel button
 		starteSpielBTN=new Button("Spiel starten");
 		// add action handler
@@ -85,17 +86,12 @@ public class SimpleFrameFX extends Stage {
 		// Close Button
 		closeBTN = new Button("Schließen");
 		closeBTN.addEventHandler(ActionEvent.ACTION, simpleListener);
-		// hbox for read pupil button and text field to enter filename
-		HBox hBox=new HBox();
-		hBox.setPadding(new Insets(2, 2, 2, 2));
 
 		// add components
-		buttonPane.getChildren().add(starteSpielBTN);
-		buttonPane.getChildren().add(hBox);
-		buttonPane.getChildren().add(closeBTN);
+		gridPane.add(starteSpielBTN, 0, 1);
+		gridPane.add(closeBTN, 0, 2);
 		
 		// add panes to borderpane
-		borderPane.setBottom(buttonPane);
 		borderPane.setCenter(gridPane);
 		
 		// set properties of the frame
@@ -126,6 +122,7 @@ public class SimpleFrameFX extends Stage {
         // add menu bar and borderpane to vbox
         vBox.getChildren().addAll(menuBar,borderPane);
 
+        
 		// set the scene and add borderpane to the scene
 		Scene scene=new Scene(vBox, 460, 170);
 		setScene(scene);
