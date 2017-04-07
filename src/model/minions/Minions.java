@@ -1,10 +1,6 @@
-package Minions;
+package model.minions;
 
-/**
- * 
- * @author Miles
- *
- */
+
 public class Minions {
 
 	private int health;
@@ -55,16 +51,15 @@ public class Minions {
 	/**
 	 * @return the movementspeed
 	 */
-	public int getMovementspeed() {
-		return movementspeed;
-	}
+		public int getMovementspeed() {
+			return movementspeed;
+		}
 
-	/**
-	 * @param movementspeed the movementspeed to set
-	 */
-	public void setMovementspeed(int movementspeed) {
-		this.movementspeed = movementspeed;
-	}
-	
+		/**
+		 * @param movementspeed the movementspeed to set
+		 */
+		public void setMovementspeed(int movementspeed) {
+			this.movementspeed = movementspeed;
+		}
 	
 }

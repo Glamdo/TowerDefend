@@ -1,4 +1,4 @@
-package Minions;
+package model.minions;
 
 public class Verbuendete{
 
